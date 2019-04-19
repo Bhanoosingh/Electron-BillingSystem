@@ -1,0 +1,15 @@
+{
+  "name": "BillingSystem",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "asar": "^1.0.0",
+    "electron": "^4.1.4",
+    "electron-packager": "^13.1.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package":"asar pack BillingSystem-win32-x64/resources/app BillingSystem-win32-x64/resources/app.asar",
+    "build": "electron-packager . BillingSystem"
+  }
+}
